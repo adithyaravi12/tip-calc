@@ -1,0 +1,294 @@
+html {
+    background-color: #ECFDF5;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 27%, rgba(47,61,1,1) 54%, rgba(0,212,255,1) 100%);
+    height: 100%; */
+} 
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.label {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
+
+    
+    letter-spacing: -0.025em;
+
+    
+    color: #020024;
+}
+
+#heading{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 25px;
+
+    
+    letter-spacing: -0.025em;
+
+    
+    color: #070720;
+}
+
+
+#container {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    left: 350px;
+    top: 155px;
+    background-color: #4ADF86;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px ;
+    grid-template-areas: 
+    ". name"
+    ". bill-amount"
+    ". tip-percentage"
+    ". tip-amount"
+    ". total-bill"
+    "btn btn"
+    "btn2 btn2";
+    margin: 0 auto;
+    /* border: 5px solid #21694c; */
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#result {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    left: 756px;
+    top: 150px;
+    background-color: #C0DFB1;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px ;
+    grid-template-areas: 
+    ". name"
+    ". bill-amount"
+    ". tip-percentage"
+    ". tip-amount"
+    ". total-bill"
+    "btn btn"
+    "btn2 btn2";
+    margin: 0 auto;
+    margin-top: 5px;
+    /* border: 5px solid #21694c; */
+    border-radius: 10px;
+    padding: 25px;
+}
+
+p{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+
+    
+}
+
+#datetime{
+    font-family: 'Karla';
+    font-style: normal;
+    height: 25px;
+    width: 250px;
+    font-size: 15px;
+
+    color: #000;
+
+}
+
+#resname{
+    font-family: 'Karla';
+    font-style: normal;
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+    text-align: justify;
+
+    color: #000;
+
+}
+
+#billamt{
+    font-family: 'Karla';
+    font-style: normal;
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+    text-align: justify;
+
+    color: #000;
+
+}
+
+#tipamt{
+    font-family: 'Karla';
+    font-style: normal;
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+    text-align: justify;
+
+    color: #000;
+
+}
+
+#finalamt{
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    /* text-align: justify; */
+
+    color: #000;
+
+}
+
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+  }
+
+
+
+#name {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: name;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#bill-amount {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: bill-amount;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#tip-percentage {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: tip-percentage;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#tip-amount {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: tip-amount;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#total-bill {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: total-bill;
+    height: 25px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#btn {
+    
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: btn;
+    height: 25px;
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    
+    background: #10B981;
+    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 6px;
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #020024;
+
+    
+}
+
+#btn2 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    grid-area: btn2;
+    height: 25px;
+    width: auto;
+    margin-top: 10px;
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); 
+    border: none;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #020024;
+}
+
+#button{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+    height: 35px;
+    width: auto;
+    margin-top: 10px;
+    background: #7e9174;
+    border: none;
+    border-radius: 5px;
+
+}

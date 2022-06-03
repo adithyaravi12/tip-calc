@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1 id="heading">Restaurant Tip</h1> <h1 id="heading" style="top: 160px;color: #4ADF86;">Calculator</h1>
+    <div id="main">  
+        <div id="container">
+            <label class="label">Restaurant Name:</label>  <input id="name" type="text">
+            <label class="label">Bill Amount: </label><input id="bill-amount" type="number">
+            <!-- Tip Percentage: <input id="tip-percentage" type="number"> -->
+            <label class="label">Tip Percentage: </label><select id = "tip-percentage">
+                <option value ="5">5%</option>
+                <option value ="10">10%</option>
+                <option value ="15">15%</option>
+                <option value ="20">20%</option>
+            </select>
+            <label class="label">Tip Amount: </label><input id="tip-amount" type="number" disabled="disabled">
+            <label class="label">Total Bill: </label><input id="total-bill" type="number" disabled="disabled">
+            <button id="btn">CALCULATE</button>
+            <button id="btn2" onClick=showBill();>SHOW BILL</button>
+        </div>
+        <div id="result">
+            <p id="datetime"></p><br>
+            <p id="resname"></p><br>
+            <p id="billamt"></p><br>
+            <p id="tipamt"></p><br>
+            <p id="finalamt"></p>
+            <input type="button" id ="button" value="Screenshot" style="float: right;" onclick="generatePDF();">
+        </div>
+    </div> 
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
