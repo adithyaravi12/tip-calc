@@ -30,7 +30,7 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://github.com/adithyaravi12/tip-calc/blob/main/res-tip-calc.mp4)
+![App Screenshot](https://github.com/adithyaravi12/tip-calc/blob/main/res-tip-calc.gif)
 
 ## 🔗 Links
 [![My Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://adithyaravi12.github.io/)
